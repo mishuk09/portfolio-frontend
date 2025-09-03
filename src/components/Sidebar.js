@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Sidebar({ setActiveTab, activeTab }) {
-    const tabs = ['Dashboard', 'AddProject', 'MMUTasks'];
+    const tabs = ['Dashboard', 'AddProject', 'MMUTasks','ActiveStatus'];
 
     return (
         <div className="w-64 bg-gray-900 text-white shadow-lg h-full p-4">

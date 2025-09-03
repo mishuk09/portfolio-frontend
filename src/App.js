@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import AddProject from './components/AddProject';
 import MMUTasks from './components/MMUTasks';
+import ActiveStatus from './components/ActiveStatus';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Dashboard');
@@ -15,6 +16,8 @@ function App() {
         return <AddProject />;
       case 'MMUTasks':
         return <MMUTasks />;
+      case 'ActiveStatus':
+        return <ActiveStatus />;
       default:
         return <Dashboard />;
     }
