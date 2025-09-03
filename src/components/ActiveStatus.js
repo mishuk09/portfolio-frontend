@@ -3,7 +3,7 @@ import React from "react";
 const ActiveStatus = () => {
     const handleAction = async (action) => {
         try {
-            const res = await fetch(`http://localhost:5000/api/lab/${action}`, {
+            const res = await fetch(`https://portfolio-backend-q5fr.onrender.com/api/lab/${action}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ student: "Mahadi Hasan Mishuk" }), // dynamic user later
