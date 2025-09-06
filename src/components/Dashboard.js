@@ -22,7 +22,7 @@ const TimerApp = () => {
             clearInterval(interval);
         }
         return () => clearInterval(interval);
-    }, [isActive, startTime]);
+    }, [isActive, startTime, time]);
 
     const handleToggle = async () => {
         if (isActive) {

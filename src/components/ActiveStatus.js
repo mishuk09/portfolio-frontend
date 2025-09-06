@@ -8,14 +8,12 @@ const ActiveStatus = () => {
     const handleAction = async (action) => {
         try {
             setLoadingAction(action);
-            const res = await fetch(
-                `https://portfolio-backend-q5fr.onrender.com/api/lab/${action}`,
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ student: "Mahadi Hasan Mishuk" }), // dynamic user later
-                }
-            );
+            const res = await fetch(`https://portfolio-backend-q5fr.onrender.com/api/lab/${action}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ student: "Mahadi Hasan Mishuk" }), // dynamic user later
+            });
+
             const data = await res.json();
             alert(data.message);
         } catch (err) {
